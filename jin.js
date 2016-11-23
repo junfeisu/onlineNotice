@@ -7,6 +7,7 @@ charset(request)
 
 var rule = new schedule.RecurrenceRule()
 rule.hour = 6
+rule.minute = 0
 var j = schedule.scheduleJob(rule, function () {
   request.get('http://online.ncu.edu.cn/eol/homepage/common/index.jsp')
     .end(function (err, res) {
@@ -60,7 +61,7 @@ var j = schedule.scheduleJob(rule, function () {
 
                       var mailOptions = {
                           from: '1982764150@qq.com',
-                          to: 'sjf1982764150@gmail.com',
+                          to: '1506785369@qq.com',
                           subject: '网络教学平台未读通知',
                           text: '未读通知，待提交作业和带参与问卷',
                           html: html
