@@ -21,7 +21,7 @@ var sendMail = function (mes) {
 
   var mailOptions = {
     from: '1982764150@qq.com',
-    to: '1161608440@qq.com',
+    to: '1506785369@qq.com',
     subject: '网络教学平台未读通知',
     text: '未读通知，待提交作业和带参与问卷',
     html: mes
